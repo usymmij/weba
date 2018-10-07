@@ -10,9 +10,6 @@ p {
 </style>
 <p id="timer1"></p>
 
-<h1>
-STOP BUILD DAY</br>
-<p id="timer2"></p>
 
 <script>
 // Set the date we're counting down to
@@ -44,29 +41,4 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-// Set the date we're counting down to
-var countDownDate2 = new Date("Feb 19, 2019 23:59:59").getTime();
-
-// Update the count down every 1 second
-var y = setInterval(function() {
-  
-  // Find the distance between now and the count down date
-  var distancebba = countDownDate2 - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var day = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hour = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minute = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var second = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("timer2").innerHTML = day + "d " + hour + "h "
-  + minute + "m " + second + "s ";
-
-  // If the count down is finished, write some text 
-  if (distancebba < 0) {
-    clearInterval(y);
-    document.getElementById("timer2").innerHTML = "PASSED";
-  }
-}, 1000);
 </script>
