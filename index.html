@@ -1,48 +1,180 @@
-<!-- Display the countdown timer in an element -->
-<h1>
-KICKOFF</br>
-<style>
-p {
-  text-align: center;
-  font-size: 60px;
-  margin-top: 0px;
-}
-</style>
-</head>
-<body>
+rendered.html
+Today
+1:16 PM
 
-<p id="timer1"></p>
-
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Jan 4, 2020 22:30:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-    // Get todays date and time
-    var now = new Date().getTime();
-    
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-    
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Output the result in an element with id="demo"
-    document.getElementById("timer1").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-    
-    // If the count down is over, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("timer1").innerHTML = "YOU'RE LATE BITCH";
-    }
-}, 1000);
-</script>
-
-</body>
-</html>
+You uploaded an item
+HTML
+rendered.html
+<html><head></head><body><link rel="stylesheet" type="text/css" href="chrome-extension://ckkdlimhmcjmikdlpkmbgfkaikojcbjk/themes/github.css" id="_theme"><div id="_html" class="markdown-body"><h1 id="overview"><a class="anchor" name="overview" href="#overview"><span class="octicon octicon-link"></span></a>Overview</h1>
+<h2 id="p1"><a class="anchor" name="p1" href="#p1"><span class="octicon octicon-link"></span></a>P1</h2>
+<table>
+<thead>
+<tr>
+<th>keybind</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>back</td>
+<td>Estop</td>
+</tr>
+<tr>
+<td>start</td>
+<td>exits estop if enabled</td>
+</tr>
+<tr>
+<td>start</td>
+<td>Enables climb when held down at the same time as p2</td>
+</tr>
+<tr>
+<td>joysticks</td>
+<td>Drive (tank)</td>
+</tr>
+<tr>
+<td>RBumper</td>
+<td>Shifts to high gear while held down</td>
+</tr>
+<tr>
+<td>right trigger</td>
+<td>Intake in</td>
+</tr>
+<tr>
+<td>left trigger</td>
+<td>intake out</td>
+</tr>
+<tr>
+<td>DPad up</td>
+<td>Hopper forward</td>
+</tr>
+<tr>
+<td>DPad down</td>
+<td>Hopper reverse</td>
+</tr>
+</tbody></table>
+<h2 id="p2"><a class="anchor" name="p2" href="#p2"><span class="octicon octicon-link"></span></a>P2</h2>
+<table>
+<thead>
+<tr>
+<th>keybind</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>start</td>
+<td>Enables climb when held down at the same time as p1</td>
+</tr>
+<tr>
+<td>Left joystick</td>
+<td>Shooter speed</td>
+</tr>
+<tr>
+<td>A button</td>
+<td>Maintain Previous shooter speed while held</td>
+</tr>
+<tr>
+<td>Right joystick up</td>
+<td>Hopper Forward</td>
+</tr>
+<tr>
+<td>Right Joystick down</td>
+<td>Hopper reverse</td>
+</tr>
+<tr>
+<td>Trigger right</td>
+<td>Turret clockwise</td>
+</tr>
+<tr>
+<td>trigger left</td>
+<td>turret counterclockwise</td>
+</tr>
+<tr>
+<td>Left bumper</td>
+<td>Use left joystick to aim</td>
+</tr>
+</tbody></table>
+<h2 id="keyboard-future-update"><a class="anchor" name="keyboard-future-update" href="#keyboard-future-update"><span class="octicon octicon-link"></span></a>Keyboard (future update)</h2>
+<table>
+<thead>
+<tr>
+<th>keybind</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>spacebar, enter</td>
+<td>doesn't disable on EXTERNAL keyboard</td>
+</tr>
+<tr>
+<td>insert</td>
+<td>disable</td>
+</tr>
+<tr>
+<td>delete</td>
+<td>emergency stop</td>
+</tr>
+<tr>
+<td>(</td>
+<td>estop</td>
+</tr>
+<tr>
+<td>)</td>
+<td>estart</td>
+</tr>
+<tr>
+<td>wasd</td>
+<td>drive</td>
+</tr>
+<tr>
+<td>shift</td>
+<td>high gear while held</td>
+</tr>
+<tr>
+<td>c</td>
+<td>slow speed</td>
+</tr>
+<tr>
+<td>e</td>
+<td>intake in</td>
+</tr>
+<tr>
+<td>r</td>
+<td>intake out</td>
+</tr>
+<tr>
+<td>right shift</td>
+<td>hopper reverse</td>
+</tr>
+<tr>
+<td>spacebar</td>
+<td>hopper forward</td>
+</tr>
+<tr>
+<td>;</td>
+<td>turret left</td>
+</tr>
+<tr>
+<td>'</td>
+<td>turret right</td>
+</tr>
+<tr>
+<td>,</td>
+<td>turret  left slow</td>
+</tr>
+<tr>
+<td>.</td>
+<td>turret right slow</td>
+</tr>
+<tr>
+<td>[ ] \</td>
+<td>shooter speeds</td>
+</tr>
+<tr>
+<td>enter</td>
+<td>shooter off / shooter to last known speed</td>
+</tr>
+<tr>
+<td>numpad 0-9</td>
+<td>cameras</td>
+</tr>
+</tbody></table>
+</div></body></html>
