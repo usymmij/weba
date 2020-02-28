@@ -26,7 +26,8 @@ B button | WOF rotation or colour (auto)
 Y button | toggle WOF
 Left bumper | OVERRIDE when held
 right joystick | turret | WOF OVERRIDE
-Dpad | | turret OVERRIDE
-Dpad up | hood up
-Dpad down | hood down
+Dpad up | hood all the way back
+DPad right | hood 1/3
+DPad down | hood 2/3
+Dpad left | hood all the way forward
 right trigger | | shooter wheel OVERRIDE
